@@ -1,0 +1,24 @@
+name: Correction report
+description: Report an error or outdated info in a stack/component
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link to the stack/component file
+      placeholder: "https://github.com/<org>/<repo>/blob/main/stacks/..."
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is wrong and what should change?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources supporting the correction (links)
+    validations:
+      required: false
