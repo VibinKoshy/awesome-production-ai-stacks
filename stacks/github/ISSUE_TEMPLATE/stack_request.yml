@@ -1,0 +1,29 @@
+name: Stack request
+description: Request a stack for a problem/use case
+title: "[Stack request]: "
+labels: ["stack-request"]
+body:
+  - type: input
+    id: usecase
+    attributes:
+      label: Use case
+      placeholder: "Lead qualification & routing for B2B SaaS"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / constraints
+      description: Data sources, latency/cost constraints, deployment preferences, compliance needs.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Nice to have
+        - Important
+        - Urgent
+    validations:
+      required: true
